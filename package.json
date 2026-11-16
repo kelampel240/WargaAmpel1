@@ -1,0 +1,35 @@
+{
+  "name": "warga-ampel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WARGA AMPEL: portal pelayanan dan pengaduan warga desa (React di GitHub Pages, backend Google Apps Script, data di Google Sheets dan Google Drive)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "test": "tsx --test src/lib/gasBridge.test.ts tests/gas-backend.test.mjs tests/security.test.mjs",
+    "check": "npm run lint && npm test && npm run build"
+  },
+  "dependencies": {
+    "chart.js": "4.6.1",
+    "lucide-react": "0.546.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.5",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "tailwindcss": "4.3.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.8"
+  }
+}
